@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title>Culin Karate by 1080DS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>  
+
+ 
+    <link rel="stylesheet" href= "style.css"><!--my css-->
+<link rel="shortcut icon" href="https://user-images.githubusercontent.com/31809707/34798634-82ccef5a-f622-11e7-9226-230a006d5234.jpg">    
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--script src="https://code.jquery.com/jquery-1.10.2.js"></script-->
+  
+ </head>
+ 
+<body>
+
+<!--Navigation bar-->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home"><img alt="Culin Karate Logo" class="w3-bar-item logo" src="https://user-images.githubusercontent.com/31809707/34794075-1740bee2-f613-11e7-99ed-3f2004b426bf.jpg" ></a>
+    <!--website title--><h3 class="w3-left">CULIN KARATE</h3>
+   <div class="w3-hide-small w3-left">
+     <a href="https://goo.gl/maps/1BDT3A6eYYE2"  class="removelinkdefault w3-button w3-light-blue w3-padding-large telloc" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+     <a href="#contact" class="removelinkdefault w3-button w3-bar-item w3-light-blue w3-padding-large telloc"><i class="fa fa-phone-square" aria-hidden="true"></i> (512) 680-3300</a>
+   </div>
+      <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="removelinkdefault w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="removelinkdefault w3-bar-item w3-button">TEAM</a>
+      <a href="#documents" class="removelinkdefault w3-bar-item w3-button">STUDENTS' SECTION</a>
+      <a href="#schedule" class="removelinkdefault w3-bar-item w3-button">SCHEDULE</a>
+      <a href="#reviews" class="removelinkdefault w3-bar-item w3-button">REVIEWS</a>
+      <a href="#pricing" class="removelinkdefault w3-bar-item w3-button">PRICING</a>
+      <a href="https://mansi00ps.github.io/culinkarate/birthday.html" class="removelinkdefault w3-bar-item w3-button" target="_blank">BIRTHDAYS</a>
+      <a href="#contact" class="removelinkdefault w3-bar-item w3-button">CONTACT</a>
+   <!--<i class="fa fa-user"></i>
+     <i class="fa fa-book"></i>
+     <i class="fa fa-calendar-alt"></i> 
+     <i class="fa fa-star"></i> 
+     <i class="fa fa-usd"></i> 
+     <i class="fa fa-envelope"></i> -->
+     
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#documents" onclick="w3_close()" class="w3-bar-item w3-button">STUDENTS' SECTION</a>
+  <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button">SCHEDULE</a>
+  <a href="#reviews" onclick="w3_close()" class="w3-bar-item w3-button">REVIEWS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="https://mansi00ps.github.io/culinkarate/birthday.html" onclick="w3_close()" class="w3-bar-item w3-button" target="_blank">BIRTHDAYS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+ 
+  <!--Phone sticky at the bottom for small/medium screens only-->
+ <div class="w3-hide-large">
+ <ul class="phoneSticky">
+    <li>
+    <a href="tel:15126803300"><i class="fa fa-phone fa-2x"></i></a>
+    </li>
+ </ul>
+ </div>
+ 
+ <!--side media bar-->
+<ul class="social">
+    <li>
+      <a class="fa fa-facebook" href="https://www.facebook.com/CulinKarateCenter/" target="_blank">   
+      <span>Facebook</span>
+    </a>
+    </li>
+
+    <li>
+      <a class="fa fa-twitter" href="#">
+      <span>Twitter</span>
+    </a>
+    </li>
+
+    <li>
+      <a class="fa fa-google-plus" href="#">
+    <span>Google Plus</span>
+    </a>
+    </li>
+ 
+    <li>
+      <a class="fa fa-instagram" href="#">
+    <span>Instagram</span>
+    </a>
+    </li>
+
+  </ul>
+
+ 
+
+    <!--CAROUSEL-->
+    <div id="home" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#home" data-slide-to="0" class="active"></li>
+    <li data-target="#home" data-slide-to="1"></li>
+    <li data-target="#home" data-slide-to="2"></li>
+    <li data-target="#home" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <!--img src="https://user-images.githubusercontent.com/31809707/34911133-f21aa61e-f888-11e7-98b1-7ac141290cc3.jpg" alt="carousel0"-->
+   <div class="fill" style="background-image:url('https://user-images.githubusercontent.com/31809707/34911133-f21aa61e-f888-11e7-98b1-7ac141290cc3.jpg?h=1080&w=1900');"></div> 
+   </div>
+   
+
+    <div class="item">
+      <!--img src="https://user-images.githubusercontent.com/31809707/34911135-079576e0-f889-11e7-8a2b-1ab2a7727b9e.jpg" alt="carousel1"-->
+     <div class="fill" style="background-image:url('https://user-images.githubusercontent.com/31809707/34911135-079576e0-f889-11e7-8a2b-1ab2a7727b9e.jpg?h=1080&w=1900');"></div> 
+   </div>     
+
+    <div class="item">
+      <!--img src="https://user-images.githubusercontent.com/31809707/34911137-154519ee-f889-11e7-8abe-9447982520b0.jpg" alt="carousel2"-->
+     <div class="fill" style="background-image:url('https://user-images.githubusercontent.com/31809707/34911137-154519ee-f889-11e7-8abe-9447982520b0.jpg?h=1080&w=1900');"></div> 
+    </div>     
+   
+
+       
+    <div class="item">
+      <!--img src="https://user-images.githubusercontent.com/31809707/34911144-3e0a29d2-f889-11e7-89f7-e624bdb82ae0.jpg" alt="carousel5"-->
+     <div class="fill" style="background-image:url('https://user-images.githubusercontent.com/31809707/34911144-3e0a29d2-f889-11e7-89f7-e624bdb82ae0.jpg?h=1080&w=1900');"></div> 
+   </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#home" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#home" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Taught by the 6th degree Black Belt Mentor - Joseph J. Culin</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Taught by the 6th degree Black Belt Mentor - Joseph J. Culin</span><br>
+    <span class="w3-large">Become Your Best Version.</span>
+    <p><a href="#about" class="removelinkdefault w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-google-plus w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT CULIN KARATE</h3>
+  <p class="w3-center w3-large">What sets us apart.</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-users w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Family-Oriented</p>
+      <p>A family that kicks together, sticks together! We offer special pricing to families that train together.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>We love what we do and it shows in our ways. We are thrilled to train the champions of tomorrow!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-graduation-cap w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Expertise</p>
+      <p>We have some of the best instructors onboard who go above and beyond to teach in ways that matter. </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-calendar w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Flexible Schedule</p>
+      <p>Our convenient schedule makes it easy to choose a time and day that works for you. We also offer make-up classes.</p>
+    </div>
+  </div>
+</div>
+ 
+ 
+ <!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">4+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">500+</span>
+    <br>Black-belt Graduates
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">500+</span>
+    <br>Happy Families
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">∞</span>
+    <br>Smiles
+  </div>
+</div>
+ 
+ 
+ 
+ <!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">Our esteemed instructors.</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="" alt="Mr. Culin" style="width:100%">
+        <div class="w3-container">
+          <h3>Joseph J Culin</h3>
+          <p class="w3-opacity">Chief Master Instructor</p>
+          <p>Mr. Culin is a direct disciple of Master Jhoon Ree, a friend and instructor of Bruce Lee. He is a martial arts veteran with black belts in several styles and currently holds a 6th degree black belt in the Korean Art of Tae Kwon Do. He has studied under many well-known masters (Jhoon Rhee, Bill Clark, Won Bai, Michael Swain, Bill Wallace, Jose Santamaria)  and is a certified Instructor by both the American Black Belt Association and the American Council of Martial Arts. 
+Mr. Culin is also a best selling author with the book "The Winning Way", which he co-wrote with the great Brian Tracy.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img class="img-responsive" src="" alt="Mr.Hackbarth" style="width:100%">
+        <div class="w3-container">
+          <h3>Dave Hackbarth</h3>
+          <p class="w3-opacity">Program Director</p>
+          <p>Mr. Hackbarth is the Program Director at Culin Karate and an instructor.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Instructor 3</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Instructor 4</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+
+
+
+ 
+ <!-- Documents Section -->
+ <div class="w3-container w3-light-grey" style="padding:128px 16px" id="documents">
+    <h3 class="w3-center">DOCUMENTS AND HANDBOOKS</h3>
+       <div class="w3-row w3-padding-64">  
+          <div class="w3-col m6 w3-padding-large">
+           <p class="w3-center">This section contains information and downloads for current Culin Karate families and students.</p>
+      <p class="w3-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+          </div> 
+          <div class="w3-col m6 w3-padding-large">
+            <p><a href='https://github.com/mansi00ps/culinkarate/files/1627132/2013_NEW_STUDENT_MANUAL.pdf' ><i class="fa fa-book"></i> Student Handbook</a></p> 
+            <p><a href='http://www.joinkarate.com/uploads/Membership_Policies.pdf' ><i class="fa fa-file-pdf-o"></i> Membership Policies</a></p>  
+            <p><a href='http://www.joinkarate.com/uploads/INTENT_TO_GRADUATE_FORM.pdf' ><i class="fa fa-file-pdf-o"></i> Intent to Graduate Form</a></p>
+            <p><a href='http://www.joinkarate.com/uploads/UniformGuidelines.pdf' ><i class="fa fa-file-pdf-o"></i> Uniform Guidelines</a></p>
+           </div> 
+      </div>
+ </div>
+      
+
+ 
+ 
+ 
+
+
+<!-- Reviews Section -->
+  <!--div class="w3-content" style="max-width:1100px">
+   <div class="w3-row w3-padding-64" id="reviews"-->
+ <div class="w3-container" style="padding:128px 16px" id="reviews">
+
+
+    
+  
+      <h3 class="w3-center">TESTIMONIALS</h3>
+  <p class="w3-center w3-large">What clients say about us.</p>
+    <div class="w3-row w3-padding-64">  
+  <div class="w3-col m6 w3-padding-large">
+ 
+    <p class="w3-large w3-justify"><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>The Culin Karate Center is an excellent place. Me and my son took classes there and loved it. I miss that place very much it was a big part of my life. Thank you Mr Culin for everything.
+ <i class="fa fa-quote-right fa-lg" aria-hidden="true"></i></p>
+    <div class="w3-center w3-large" style="color:#fcc485;">★ ★ ★ ★ ★</div>
+<p class="w3-center w3-large">SAMANTHA FOSHEE</p>
+   
+<p class="w3-large w3-justify"><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>Best place to learn Karate as a family! We are loving it so much! Highly recommended for anyone evaluating Martial Arts!!The self-confidence and leadership skills you acquire through their training will help everyone become extremely successful in their life no matter what career you want to choose. Above all, Master Culin is such an inspiring and a motivating instructor.
+ <i class="fa fa-quote-right fa-lg" aria-hidden="true"></i></p>
+    <div class="w3-center w3-large" style="color:#fcc485;">★ ★ ★ ★ ★</div>
+   <p class="w3-center w3-large">LAKSHMI SAMPATH</p>
+   
+    </div>
+  
+ 
+ <div class="w3-col m6 w3-padding-large">
+ 
+    <p class="w3-large w3-justify"><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>It is the best family friendly place to grow a strong family!<i class="fa fa-quote-right fa-lg" aria-hidden="true"></i></p>
+    <div class="w3-center w3-large" style="color:#fcc485;">★ ★ ★ ★ ★</div>
+<p class="w3-center w3-large">NATHANIEL ELIAS</p>
+   
+<p class="w3-large w3-justify"><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>This is a gem. The first lesson begins as you step through the doors, love and respect for yourself and others. I have been a part of many other great well minded schools; this school has a great mixture fun but with respect, discipline, structure, and strength that undoubtedly leads only to success and accomplishment in martial arts and life. The instructors are very knowledgable, patient, and supportive with every student during class; no one is left behind. Every level has the same love and respect. This is a great source of family fun and building.
+ <i class="fa fa-quote-right fa-lg" aria-hidden="true"></i></p>
+    <div class="w3-center w3-large" style="color:#fcc485;">★ ★ ★ ★ ★</div>
+   <p class="w3-center w3-large">VINCENT D</p>
+   
+    </div>
+  </div>
+ </div>
+ 
+ <!--------------------->
+
+
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-light-blue w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+ 
+ 
+ 
+ <!--Class Schedule Google calendar -->
+ <div class="w3-container" style="padding:128px 16px" id="schedule">
+  
+   
+   <!--heading-->
+  <h3 class="w3-center">CLASS SCHEDULE</h3>
+  <p class="w3-center w3-large">Traditional TAE KWON DO and CANE classes.</p>
+
+<div class="w3-row-padding" style="margin-top:64px">
+ <div class="w3-col m6">
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Hours</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>White/Gold/Orange  Early Class</b></td>
+        <td>M/W 4:30PM  T/TH 3:45PM</td>
+      </tr>
+      <tr>
+        <td><b>White/Gold/Orange</b></td>
+        <td>M/W 6:30PM  T/TH 4:45 & 5:45PM</td>
+      </tr>
+      <tr>
+        <td><b>Green/Purple/Blue</b></td>
+        <td>M/W 6:30PM  T/TH 4:45PM</td>
+      </tr>
+      <tr>
+        <td><b>Red - Black</b></td>
+        <td>M/W 7:30PM  SAT 11:15AM</td>
+      </tr>
+      <tr>
+        <td><b>Black Belt Only</b></td>
+        <td>M/W 7:30PM  SAT 11:15AM</td>
+      </tr>
+      <tr>
+       <td><b>Homeschool</b></td>
+        <td>WED 1PM</td>
+      </tr>
+     <tr>
+        <td><b>Starter/BBC/LP</b></td>
+        <td>SAT 9AM</td>
+      </tr>
+      <tr>
+        <td><b>BBC/LP Only</b></td>
+        <td>SAT 9:45AM Sparring Class</td>
+      </tr>
+      <tr>
+        <td><b>LP Only</b></td>
+        <td>SAT 10:30AM Weapons Class</td>
+      </tr>
+      <tr>
+        <td><b>C.I.T.</b></td>
+        <td>WED 8PM</td>
+      </tr>
+     <tr>
+        <td><b>Cane Class</b></td>
+        <td>MON 8 - 8.45PM</td>
+      </tr>
+    </tbody>
+  </table>
+        <div class="w3-padding-16">
+            <p class="w3-small"> *BBC - Add 15 mins to existing classes for weapons training.</p>
+            <p class="w3-small"> *LP - Add 30 mins to existing classes for weapons/ leadership training.</p>
+          </div>
+   </div>
+
+<!--div class="w3-container" style="padding:128px 16px">
+  <div class="w3-row-padding"-->
+   
+   <!--heading-->
+    <!--h3 class="w3-center">CLASS SCHEDULE</h3>
+
+   <div class="w3-col m6">
+   <div class="w3-section" style="padding-top:16px">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-padding-16"><b>TRADITIONAL TAE KWON DO:</b-->
+      
+
+        <!--p class="w3-small">    </p>
+        <p class="w3-small">   </p>       
+        <p class="w3-small"></p>
+        <p class="w3-small"><b></p>
+        <p class="w3-small"><b>  </p>       
+        <p class="w3-small"><b> </p>                         
+        <p class="w3-small"><b></p-->      
+         
+        <!--div class="w3-row-padding"> 
+        <div class="w3-col m6">
+        <p class="w3-small"><b>White/Gold/Orange  Early Class  </b></p>
+        <p class="w3-small"><b>White/Gold/Orange  </b></p>       
+        <p class="w3-small"><b>Green/Purple/Blue  </b></p>
+        <p class="w3-small"><b>RED - BLACK  </b></p>
+        <p class="w3-small"><b>BLACK BELT ONLY  </b></p>  
+         <p class="w3-small"><b>HOMESCHOOL  </b></p>
+        <p class="w3-small"><b>STARTER/BBC/LP  </b></p>
+        <p class="w3-small"><b>BBC/LP ONLY  </b></p>       
+        <p class="w3-small"><b>LP ONLY  </b></p>                         
+        <p class="w3-small"><b>C.I.T.  </b></p>
+        </div>
+         
+        <div class="w3-col m6">
+        <p class="w3-small"> M/W 4:30PM  T/TH 3:45PM  </p>
+         <p class="w3-small"> M/W 6:30PM  T/TH 4:45 & 5:45PM  </p>
+         <p class="w3-small"> M/W 6:30PM  T/TH 4:45PM </p>
+         <p class="w3-small"> M/W 5:30PM T/TH 6:45PM   </p>
+         <p class="w3-small"> M/W 7:30PM  SAT 11:15AM  </p>
+         <p class="w3-small"> WED 1PM  </p>
+         <p class="w3-small"> SAT 9AM   </p>
+         <p class="w3-small"> SAT 9:45AM SPARRING CLASS  </p>
+         <p class="w3-small"> SAT 10:30AM WEAPONS CLASS  </p>
+         <p class="w3-small"> WED 8PM  </p>
+        </div>  
+         </div>
+       
+        <li class="w3-padding-16">
+            <p class="w3-small">*BBC - ADD 15MINS TO EXISTING CLASSES FOR WEAPONS TRAINING</p>
+            <p class="w3-small">*LP - ADD 30MINS TO EXISTING CLASSES FOR WEAPONS/LEADERSHIP TRAINING.</p>
+          </li>
+       
+          <li class="w3-padding-16"><b>CANE CLASS:</b>  MONDAY EVENINGS 8:00-8:45PM</li>
+          
+       
+         
+        
+      </ul>
+    </div>
+   </div-->
+
+   
+    <div class="w3-col m6">
+     <!--div style="margin-top:32px"-->
+     
+   
+      <div class="responsive-iframe-container big-container">
+   <iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FChicago&amp;showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+ </div>
+ 
+ <div class="responsive-iframe-container small-container">
+ 
+   <iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FChicago&amp;showTitle=0&amp;mode=AGENDA&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;" style="border: 0" width="350" height="325" frameborder="0" scrolling="no"></iframe>
+ </div> 
+ <!--/div-->
+    </div> 
+   </div>
+  </div>
+</div>
+   <!--iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe-->
+
+
+ 
+ 
+ 
+ 
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <!--p class="w3-center w3-large">Lets get in touch. Send us a message:</p-->
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 200 Buttercup Creek Blvd. #126
+Cedar Park, Tx 78613</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 512-680-3300</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+     
+      <!-- Calendly Integration -->
+       <div class="w3-padding-large w3-black w3-center w3-margin-top w3-margin-bottom">
+  <h3> Click here to schedule your first session! </h3>
+  <a href="https://mansi00ps.github.io/culinkarate/calendly.html" class="w3-button removelinkdefault w3-white" target="_blank"><i class="fa fa-calendar w3-margin-right" aria-hidden="true"></i>OPEN CALENDAR</a>
+</div>
+     
+      <!--form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form-->
+     
+     <!-- Add Google Maps -->
+     <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.6396191091076!2d-97.82269408521768!3d30.502947881717805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b2d0cf9008ce9%3A0x4d3705a03d2def50!2sCulin+Karate+Center+Ltd.!5e0!3m2!1sen!2sus!4v1516236764125" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe-->
+      <div id="googleMap"  class="w3-margin-bottom" style="width:100%;height:468px;"></div><!--class="w3-greyscale-max"-->
+    
+     
+    </div>
+    <div class="w3-half">
+      
+     
+      <!-- MailChimp form-->
+     <div id="mc_embed_signup">
+        <form action="https://joinkarate.us16.list-manage.com/subscribe/post?u=14f729a8da09af81258d9034e&amp;id=cdfdf7c076" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <h2>Subscribe to our mailing list</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group">
+              <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+</label>
+              <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+</label>
+              <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div class="mc-field-group size1of2">
+              <label for="mce-MMERGE3">Phone Number  <span class="asterisk">*</span>
+</label>
+              <input type="text" name="MMERGE3" class="required" value="" id="mce-MMERGE3">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-MMERGE4">How Did You Hear About Us?  <span class="asterisk">*</span>
+</label>
+              <input type="text" value="" name="MMERGE4" class="required" id="mce-MMERGE4">
+            </div>
+            <div class="mc-field-group input-group">
+              <strong>I'm Interested In... </strong>
+              <ul>
+                <li><input type="checkbox" value="2" name="group[3067][2]" id="mce-group[3067]-3067-0"><label for="mce-group[3067]-3067-0">6-Week Introductory Program</label></li>
+                <li><input type="checkbox" value="4" name="group[3067][4]" id="mce-group[3067]-3067-1"><label for="mce-group[3067]-3067-1">Karate Birthday Party</label></li>
+                <li><input type="checkbox" value="8" name="group[3067][8]" id="mce-group[3067]-3067-2"><label for="mce-group[3067]-3067-2">Self-Defense Workshop</label></li>
+                <li><input type="checkbox" value="16" name="group[3067][16]" id="mce-group[3067]-3067-3"><label for="mce-group[3067]-3067-3">Martial Arts Club (Harmony Schools ONLY)</label></li>
+              </ul>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_14f729a8da09af81258d9034e_cdfdf7c076" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="removelinkdefault w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/CulinKarateCenter/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-google-plus w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://mansi00ps.github.io/1080ds/" title="1080DS" target="_blank" class="w3-hover-text-green">1080 Designer Studio</a></p>
+</footer>
+ 
+ 
+ <!-- All Scripts-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+<script src="https://mansi00ps.github.io/culinkarate/custom.js"></script>
+<!-- Add Google Maps -->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBstgOnZpuaUvdbFLgl-yeyClSk8hw_5FY&callback=myMap"></script>
+ <!-- mailchimp script-->
+ <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='phone';fnames[4]='MMERGE4';ftypes[4]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+ </body>
+</html>
