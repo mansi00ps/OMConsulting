@@ -19,6 +19,8 @@
 ![1547587896579](https://github.com/user-attachments/assets/3cf243f4-f228-4c26-8133-bc2da99cb210)
 
 
+[Technology Services.pdf](https://github.com/user-attachments/files/17769909/Technology.Services.pdf)
+
 
 
 
